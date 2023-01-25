@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2773808eae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <div class="todo-container">
+      <h2><i class="fa-regular fa-square-check"></i>&nbsp; Add your To Do list here</h2>
+    <form action="" id="box">
+      <input type="text" name="" id="text" placeholder="Creat your task" />
+      <input type="button" value="Add" id="click" onclick="Add()" />
+    </form>
+    <p id="invalid"></p>
+    <div class="list-items">
+      <h3 id="list-titel">To Do List &nbsp;<i class="fa-solid fa-list"></i></h3> <!--some times get elementby id to inner html not works thats why i put the content here-->
+      <ul id="list"></ul>
+    </div>
+  </div>
+  <body></body>
+</html>
