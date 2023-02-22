@@ -7,10 +7,15 @@ function Add() {
   } else {
     document.getElementById(
       "list"
-    ).innerHTML += `<li>${addText} <i class="fa-solid fa-trash" id="del"></i></li>`; 
+    ).innerHTML += `<li>${addText} <i class="fa-solid fa-trash" id="del" onclick="del(event)"></i></li>`; 
   }
    addText = document.getElementById("text").value="";
    addText = document.getElementById("text").focus();
 }
 
-//delete funtion not working.. delete funtion need to add
+function del(event) {
+  let list= event.target.parentElement
+  list.remove()
+}
+
+
